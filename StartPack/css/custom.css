@@ -1,0 +1,365 @@
+/* ==========================================================================
+   Css reset
+   ========================================================================== */
+*:focus {
+  outline: none;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+q:before,
+q:after {
+  content: "";
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-size: 100%;
+}
+legend {
+  color: #000;
+}
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+
+/* ==========================================================================
+   Common Styles
+   ========================================================================== */
+.alignleft {
+  float: left;
+  margin-right: 15px;
+}
+.alignright {
+  float: right;
+  margin-left: 15px;
+}
+.aligncenter {
+  display: block;
+  margin: 0 auto 15px;
+}
+.slicknav_menu {
+  display: none;
+}
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+  display: block;
+}
+body {
+  background: none repeat scroll 0 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.5em;
+  margin: 0 0 15px;
+}
+p {
+  font-weight: 300;
+  line-height: 1.5em;
+  margin-bottom: 15px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a:focus {
+  outline: solid 0;
+}
+a {
+  color: #333;
+  transition: all 0.7s ease 0s;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ol {
+  list-style: inside none decimal-leading-zero;
+}
+ul {
+  list-style: inside none disc;
+}
+#scrollUp {
+  background: url(../img/top.png) no-repeat;
+  height: 38px;
+  width: 38px;
+  bottom: 5px;
+  right: 5px;
+  text-indent: -999999px;
+  display: block;
+}
+.content {
+  margin: 0 auto;
+  width: 1170px;
+}
+label {
+  display: block;
+}
+strong {
+  font-weight: 500;
+}
+input[type="name"],
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="tel"],
+input[type="password"],
+textarea,
+select {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #ddd;
+  color: #000;
+  font-weight: 300;
+  margin-bottom: 10px;
+  max-height: 150px;
+  padding: 10px;
+  width: 100%;
+}
+input#account_password {
+  border: 1px solid #ddd;
+  color: #111;
+  padding: 10px;
+  width: 100%;
+}
+textarea#order_comments {
+  border: 1px solid #ddd;
+  color: #111;
+  padding: 10px;
+  width: 100%;
+}
+input[type="submit"] {
+  background: #003e5f none repeat scroll 0 0;
+  border: 1px solid #003e5f;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px;
+  transition: all 0.5s ease 0s;
+  width: 150px;
+}
+input[type="submit"]:hover {
+  background: #111 none repeat scroll 0 0;
+  border: 1px solid #111;
+}
+input#password {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #ddd;
+  color: #111;
+  padding: 10px;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #9cb2c0;
+  opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #9cb2c0;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #9cb2c0;
+}
+blockquote {
+  border-top: 5px solid;
+  border-bottom: 5px solid;
+  padding: 35px;
+  margin: 10px 0;
+}
+blockquote p {
+}
+iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+}
+@media only screen and (min-width: 200px) and (max-width: 991px) {
+  iframe {
+    height: 200px;
+  }
+}
+.wp-block-button a {
+  background: #003e5f;
+  color: #fff !important;
+  margin-top: 10px;
+}
+.wp-block-button a:hover {
+  background: #000;
+}
+.wp-block-search__label {
+  width: 100%;
+  font-weight: 700;
+  color: #000;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+button.wp-block-search__button {
+  background: #0091be;
+  border: 1px solid #0091be;
+  color: #fff;
+}
+
+/* ==========================================================================
+   Social Icon Color Area
+========================================================================== */
+a:hover .fa-facebook {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+a:hover .fa-facebook-f {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+a:hover .fa-twitter {
+  background-color: #5dd7fc;
+  border-color: #5dd7fc;
+}
+a:hover .fa-google-plus {
+  background-color: #dd4b39;
+  border-color: #dd4b39;
+}
+a:hover .fa-instagram {
+  background-color: #464545;
+  border-color: #464545;
+}
+a:hover .fa-linkedin {
+  background-color: #0077b5;
+  border-color: #0077b5;
+}
+a:hover .fa-linkedin-in {
+  background-color: #0077b5;
+  border-color: #0077b5;
+}
+a:hover .fa-pinterest {
+  background-color: #bd081c;
+  border-color: #bd081c;
+}
+a:hover .fa-youtube {
+  background-color: #cd201f;
+  border-color: #cd201f;
+}
+a:hover .fa-vimeo {
+  background-color: #1ab7ea;
+  border-color: #1ab7ea;
+}
+a:hover .fa-dribbble {
+  background-color: #ea4c89;
+  border-color: #ea4c89;
+}
+a:hover .fa-behance {
+  background-color: #1769ff;
+  border-color: #1769ff;
+}
+a:hover .fa-flickr {
+  background-color: #ff0084;
+  border-color: #ff0084;
+}
+a:hover .fa-tumblr {
+  background-color: #35465c;
+  border-color: #35465c;
+}
+a:hover .fa-foursquare {
+  background-color: #f94877;
+  border-color: #f94877;
+}
+a:hover .fa-github {
+  background-color: #333;
+  border-color: #333;
+}
+a:hover .fa-skype {
+  background-color: #00aff0;
+  border-color: #00aff0;
+}
+a:hover .fa-feed {
+  background-color: #ff9900;
+  border-color: #ff9900;
+}
