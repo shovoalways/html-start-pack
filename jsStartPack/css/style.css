@@ -1,0 +1,33 @@
+html {
+  height: 100%;
+}
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+p {
+  font-weight: 400;
+}
+h1#title {
+  color: aliceblue;
+}
